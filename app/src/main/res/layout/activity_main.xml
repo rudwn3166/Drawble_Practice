@@ -19,13 +19,21 @@
         android:orientation="horizontal">
 
 
-        <Button
+        <TextView
+            android:clickable="true"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="좋아요"/>
+            android:background="@drawable/red_round_rect"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="좋아요" />
 
-        <Button
+        <TextView
+            android:clickable="true"
+            android:background="@drawable/blue_round_rect"
+            android:padding="10dp"
+            android:gravity="center"
             android:layout_marginLeft="5dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
