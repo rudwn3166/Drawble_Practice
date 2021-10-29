@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
 //    액션바에 있는 UI를 담아줄 변수를 멤버변수로 만들기
 
-    lateinit var toastBtn = Button
+    lateinit var toastBtn : Button
    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -39,8 +39,8 @@ class MainActivity : AppCompatActivity() {
         toolbar.setContentInsetsAbsolute(0,0)
 
 //       커스텀 액션바에 달아둔 버튼을 찾아오는 방법
-       toastBtn =defaultActionbar.customView.findViewById<Button>(R.id.toastButton)
-       toastButton.setOnClickListener {
+       toastBtn =defaultActionbar.customView.findViewById<Button>(R.id.toastBtn)
+       toastBtn.setOnClickListener {
            Toast.makeText(this, "액션바를 통해 토스트 띄우기 ", Toast.LENGTH_SHORT).show()
            
 
