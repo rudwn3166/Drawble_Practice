@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.my_cutsom_action_bar.*
 class MainActivity : AppCompatActivity() {
 
 //    액션바에 있는 UI를 담아줄 변수를 멤버변수로 만들기
-
+//   lateinit var 는 =이 아니라  :로 한다
     lateinit var toastBtn : Button
    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
